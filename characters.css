@@ -1,0 +1,153 @@
+html {
+  background-color: #e7e4df;
+  font-family: myFont;
+}
+
+#navBar {
+  position: sticky;
+  top: 0px;
+  background-color: #758073;
+  height: 60px;
+  padding-top: 20px;
+  border-radius: 20px;
+  opacity: 90%;
+  box-shadow: 5px 5px 5px black;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding-left: 30px;
+  justify-content: center;
+  a {
+    font-size: 40px;
+    color: snow;
+  }
+  a:hover{
+    color: black;
+  }
+  img {
+    width: 50px;
+    box-shadow: none;
+    padding-bottom: 10px;
+  }
+}
+
+h1 {
+  font-size: 70px;
+  margin-bottom: 0px;
+}
+
+#audio {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-right: 30px;
+  font-size: 27px;
+  p {
+    margin-bottom: 0px;
+  }
+  img {
+    margin-bottom: 8px;
+    justify-content: center;
+    width: 230px;
+  }
+}
+
+img {
+  box-shadow: 0 10px 10px rgb(23, 23, 23);
+}
+
+#noshadow {
+  box-shadow: 0px 0px 0px #e7e4df
+}
+
+section {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  img:hover{
+    transform: scale(130%); 
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  padding-top: 50px;
+  img {
+    width: 200px;
+  }
+  a {
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    float: right;
+    margin-top: 0px;
+  }
+  a:hover {
+    color: #bdc481;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+
+.talkbubble {
+  position: relative;
+  height: 100px;
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  border: solid lightgrey;
+  background: lightgrey;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.talkbubble:before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 26px;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-right: 26px solid lightgrey;
+  border-bottom: 13px solid transparent;
+}
+
+section img {
+  width: 30%;
+}
+
+@font-face {
+  font-family: "myFont";
+  src: url("Sehep-Regular.ttf");
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 50px;
+  }
+  div img {
+    width: 200px;
+  }
+  audio{
+    width: 2px;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    img {
+      width: 400px;
+    }
+  }
+  #navBar {
+    padding-left: 10px;
+    a {
+      font-size: 20px;
+    }
+  }
+}
+
+

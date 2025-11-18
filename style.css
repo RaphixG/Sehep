@@ -1,0 +1,139 @@
+html {
+  background-color: #e7e4df;
+  font-family: myFont;
+}
+
+header {
+  text-align: center;
+  padding-bottom: 1000px;
+  padding-top: 10px;
+  #contact {
+    font-size: 20px;
+    text-align: right;
+    padding-right: 20px;
+  }
+  a {
+    color: black;
+    font-size: 40px;
+  }
+  a:hover {
+    color: #bdc481;
+  }
+  p {
+    font-size: 30px;
+  }
+}
+
+img {
+  width: 500px;
+  padding-top: 50px;
+}
+
+nav ul {
+  display: inline-flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 50px;
+}
+
+main {
+  padding-left: 20px;
+  padding-bottom: 20px;
+  font-size: 30px;
+  background-color: #fcfcff;
+
+  .scene {
+    position: relative; /* make the character move into this zone */
+    height: 300px;
+  }
+
+  img {
+    padding: 0px;
+    margin-left: -70px;
+    position: absolute;
+    animation: marche 30s ease-in infinite;
+    width: 300px;
+  }
+}
+
+footer {
+  ul {
+    font-size: 30px;
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    justify-content: center;
+    align-items:center;
+    padding-left: 30px;
+  }
+
+  img {
+    width: 48px;
+    padding: 10px;
+  }
+  img:hover{
+    background-color: #bdc481;
+    border-radius: 20%;
+  }
+
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+@font-face {
+  font-family: "myFont";
+  src: url("Sehep-Regular.ttf");
+}
+
+@keyframes marche {
+  from {
+    left: 0; /* Départ à gauche */
+  }
+  to {
+    left: calc(
+      100% - 400px
+    ); /* Va jusqu’à la droite (moins la largeur de l’image) */
+  }
+}
+
+/* Configuration for phones*/
+@media (max-width: 768px) {
+  header {
+    p {
+      font-size: 30px;
+    }
+    img {
+      width: 300px;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    a {
+      font-size: 40px;
+    }
+  }
+
+  p {
+    font-size: 20px;
+  }
+  footer {
+    ul {
+      font-size: 16px;
+      gap: 30px;
+      a:hover {
+        color: #bdc481;
+        text-decoration: solid;
+      }
+      img{
+        padding-left: 10px;
+      }
+    }
+  }
+}
