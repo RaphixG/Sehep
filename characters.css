@@ -52,22 +52,17 @@ h1 {
   }
 }
 
-img {
-  box-shadow: 0 10px 10px rgb(23, 23, 23);
-}
-
-#noshadow {
-  box-shadow: 0px 0px 0px #e7e4df
-}
-
 section {
   padding-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  img:hover{
+  .zoom:hover{
     transform: scale(130%); 
+  }
+  .zoom {
+    box-shadow: 0 10px 10px rgb(23, 23, 23);
   }
 }
 
@@ -124,6 +119,41 @@ section img {
   font-family: "myFont";
   src: url("Sehep-Regular.ttf");
 }
+/* Forest Divinity */
+#forest-divinity {
+    filter: blur(4px);
+    padding-bottom: 50px;
+}
+
+#forest-divinity:hover {
+    filter: none;
+}
+
+input {
+  width: 400px;
+  height: 600px;;
+  background-image: url("medias/Forest-divinity.png");
+  color: white;
+  font-size: 40px;
+  font-family : myFont;
+  text-shadow: 5px 1px black;
+}
+
+#big-image {
+  height: 800px;
+  width: 1000px; 
+  background-color: #758073;
+  border-radius: 30px;
+}
+
+main {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 @media (max-width: 768px) {
   h1 {
@@ -136,8 +166,6 @@ section img {
     width: 2px;
   }
   section {
-    display: flex;
-    flex-direction: column;
     img {
       width: 400px;
     }
